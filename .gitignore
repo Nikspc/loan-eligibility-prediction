@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+backend/ml_model/model.pkl
+.ipynb_checkpoints/
