@@ -147,10 +147,21 @@ To test the loan eligibility prediction, send a POST request to the `/predict-lo
 
 To stop the FastAPI server, simply press `CTRL + C` in the terminal where the server is running.
 
+**Frontend Setup**
+Navigate to the frontend directory:
+
+cd frontend
+Install Frontend Dependencies: Install all the necessary frontend packages with:
+
+npm install
+Run the React Development Server: Start the React app with:
+
+npm start
+The frontend will be running at http://localhost:3000.
 ---
 
 ## Technologies Used
-
+-**Frontend Framework**: ReactJs
 - **Backend Framework**: FastAPI
 - **Machine Learning**: scikit-learn
 - **Model Saving**: joblib
