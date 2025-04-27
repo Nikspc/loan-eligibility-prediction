@@ -1,11 +1,21 @@
 from fastapi import FastAPI
 from backend.models.user_input import UserInput
 from backend.utils.predict import make_prediction
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Loan Eligibility Prediction System",
     description="Predicts if a customer is eligible for a loan",
     version="1.0"
+)
+
+# Allow CORS for the frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # React frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get("/")
