@@ -45,7 +45,7 @@ loan_eligibility_app/
 If you haven't already, clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Nikspc/loan-eligibility-prediction.git
 cd loan_eligibility_app
 ```
 
